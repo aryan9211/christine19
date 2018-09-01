@@ -20,8 +20,10 @@ All files were written using Python. However, part I of the project was written 
 
 To run the “train.py” file, the only mandatory argument will be the data directory of the images to train. However, one can further control these parameters (which already have defaults): epochs, learning rate, to use GPU or CPU to train, number of hidden layers, and one of three retrained models (vgg16, resnet18, alexnet).
 	Example: python train.py /path/to/data/directory —arch alexnet —epochs 3
+	
 “predict.py” follows the same format except there are different parameters in control of the user. Also, “train.py” saves a checkpoint, so the 2 mandatory arguments for “predict.py” are the image to predicted and the checkpoint file containing the trained model.
-	Example: python predict.py /path/to/image checkpoint.file —category_names path/to/file/containing//	category/names
+	Example: python predict.py /path/to/image checkpoint.file —category_names path/to/file/containing/category/names
+
 The “image_classifier” files include a dataset of flowers downloaded and transformed to be then trained, predicted, and evaluated. No need to input arguments into this file.
 
 Built With
